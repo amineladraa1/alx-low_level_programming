@@ -10,22 +10,22 @@
 
 int main(void)
 {
-        char ch;
+	char ch;
 	char Uch;
 
-        ch = 'a';
+	ch = 'a';
 	Uch = 'A';
         
 	while (ch <= 122)
-        {
+	{
                 putchar(ch);
-                ch++;
+		ch++;
         }
 	while (Uch <= 90)
-        {
-                putchar(Uch);
-                Uch++;
-        }
-        putchar('\n');
-        return (0);
+	{
+		putchar(Uch);
+		Uch++;
+	}
+	putchar('\n');
+	return (0);
 }
