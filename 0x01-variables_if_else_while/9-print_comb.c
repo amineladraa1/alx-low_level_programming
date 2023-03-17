@@ -13,7 +13,7 @@ int main(void)
 	int ch;
 
 	ch = 48;
-	while (ch <= 57)
+	for (ch = 48 ; ch <= 57 ; ch++)
 	{
 		putchar(ch);
 		putchar(',');
