@@ -15,7 +15,7 @@ int main(void)
 	ch = 'a';
 	while (ch <= 122)
 	{
-		if(ch != 'q' && ch != 'e')
+		if (ch != 'q' && ch != 'e')
 			putchar(ch);
 		ch++;
 	}
