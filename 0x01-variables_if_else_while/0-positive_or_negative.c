@@ -11,6 +11,8 @@
 /*
  * main - Entry point
  *
+ * Description: the programs check if n is positive or negative
+ *
  * Return: Always 0 (success)
  */
 
