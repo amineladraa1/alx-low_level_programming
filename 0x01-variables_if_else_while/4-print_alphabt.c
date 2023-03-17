@@ -13,9 +13,10 @@ int main(void)
 	char ch;
 
 	ch = 'a';
-	while (ch <= 122 && ch != 'q' && ch != 'e')
+	while (ch <= 122)
 	{
-		putchar(ch);
+		if(ch != 'q' && ch != 'e')
+			putchar(ch);
 		ch++;
 	}
 	putchar('\n');
