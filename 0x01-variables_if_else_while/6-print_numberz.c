@@ -13,10 +13,8 @@ int main(void)
 	int i;
 
 	i = 48;
-
 	for (i = 48 ; i <= 57 ; i++)
-		putchar(i - 48);
-
+		putchar(i - '0');
 	putchar('\n');
 	return (0);
 }
