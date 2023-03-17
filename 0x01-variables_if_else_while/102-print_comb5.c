@@ -10,18 +10,20 @@
 
 int main(void)
 {
-	int i, j;
+	int i, n1, n2;
 	
-	for (i = 0; i <= 99; i++)
+	for (i = 1; i <= 10000; i++)
 	{
-		for (j = i; j <= 99; j++)
+		n1 = (i - 1) / 100;
+		n2 = (i - 1) % 100;
+		if (n1 <= n2)
 		{
-			putchar(i / 10 + '0');
-			putchar(i % 10 + '0');
+			putchar(n1 / 10 + '0');
+			putchar(n1 % 10 + '0');
 			putchar(' ');
-			putchar(j / 10 + '0');
-			putchar(j % 10 + '0');
-			if (i != 99 || j != 99)
+			putchar(n2 / 10 + '0');
+			putchar(n2 % 10 + '0');
+			if (i < 10000)
 			{
 				putchar(',');
 				putchar(' ');
