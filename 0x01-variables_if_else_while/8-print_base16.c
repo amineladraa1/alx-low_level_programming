@@ -22,10 +22,10 @@ int main(void)
 		n_ch++;
 	}
 	while (a_ch <= 122 && a_ch != 'g')
-        {
-                putchar(a_ch);
-                a_ch++;
-        }
+	{
+		putchar(a_ch);
+		a_ch++;
+	}
 	putchar('\n');
 	return (0);
 }
