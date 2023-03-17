@@ -13,7 +13,7 @@ int main(void)
 	char ch;
 
 	ch = 'z';
-	while(ch >= 97)
+	while (ch >= 97)
 	{
 		putchar(ch);
 		ch--;
