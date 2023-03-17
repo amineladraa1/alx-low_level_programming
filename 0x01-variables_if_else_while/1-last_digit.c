@@ -2,15 +2,15 @@
 #include <time.h>
 #include <stdio.h>
 
-
 /**
- * main - intrence point
+ * main - Entry point
  *
- * Description : function evaluate n
+ * Description: 'the program's description'
+ * @parameter: describe the parameter
  *
- * main always returns 0 in success
- * 
+ * Return: Always 0 (Success)
  */
+
 
 int main(void)
 {
