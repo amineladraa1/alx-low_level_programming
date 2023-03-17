@@ -18,11 +18,11 @@ int main(void)
 	{
 		for (j = i + 1 ; j <= 57 ; j++)
 		{
-			if(i != j )
+			if (i != j)
 			{
 				putchar(i);
 				putchar(j);
-				if(i + j != 113)
+				if (i + j != 113)
 				{
 					putchar(',');
 					putchar(' ');
