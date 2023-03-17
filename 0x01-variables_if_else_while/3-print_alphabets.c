@@ -15,12 +15,12 @@ int main(void)
 
 	ch = 'a';
 	Uch = 'A';
-        
+
 	while (ch <= 122)
 	{
-                putchar(ch);
+		putchar(ch);
 		ch++;
-        }
+	}
 	while (Uch <= 90)
 	{
 		putchar(Uch);
