@@ -20,7 +20,7 @@ int main(void)
 		{
 			for (k = j+1 ; k <= 57 ; k++)
 			{
-				if (i != j != k)
+				if ((i != j) != k)
 				{
 					putchar(i);
 					putchar(j);
