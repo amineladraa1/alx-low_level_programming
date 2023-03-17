@@ -3,11 +3,9 @@
 #include <stdio.h>
 /* more headers goes there */
 /*
- * main function
- * return 0 success
- * prints if n is positive
- * or negative
- * or 0
+ * main - Entry point
+ *
+ * Return: Always 0 (success)
  */
 /* betty style doc for function main goes there */
 int main(void)
