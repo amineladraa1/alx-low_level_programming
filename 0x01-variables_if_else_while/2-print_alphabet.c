@@ -13,7 +13,7 @@ int main(void)
 	char ch;
 
 	ch = 'a';
-	while (ch <= 26)
+	while (ch <= 122)
 	{
 		putchar(ch);
 		ch++;
