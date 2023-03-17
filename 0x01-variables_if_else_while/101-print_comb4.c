@@ -13,12 +13,12 @@ int main(void)
 	int i;
 	int j;
 	int k;
-	
-	for (i = 48 ; i <= 57 ; i ++)
+
+	for (i = 48 ; i <= 57 ; i++)
 	{
-		for (j = i+1 ; j <= 57 ; j++)
+		for (j = i + 1 ; j <= 57 ; j++)
 		{
-			for (k = j+1 ; k <= 57 ; k++)
+			for (k = j + 1 ; k <= 57 ; k++)
 			{
 				if ((i != j) != k)
 				{
@@ -30,9 +30,9 @@ int main(void)
 						putchar(',');
 						putchar(' ');
 					}
-				}	
-			}	
-		}	
+				}
+			}
+		}
 	}
 	putchar('\n');
 	return (0);
