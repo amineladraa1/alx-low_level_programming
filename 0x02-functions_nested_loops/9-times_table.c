@@ -19,13 +19,18 @@ void times_table(void)
 			_putchar(' ');
 			_putchar((multi / 10) + '0');
 			_putchar((multi % 10) + '0');
-			_putchar(',');
+			if (j != 9 )
+				_putchar(',');
 		}else
+		{
+		if (i != 0)
 		{
 			_putchar(' ');
 			_putchar(' ');
+		}
 			_putchar(multi + '0');
-			_putchar(',');
+			if (j != 9 )
+				_putchar(',');
 		}
 	}
 		_putchar('\n');
