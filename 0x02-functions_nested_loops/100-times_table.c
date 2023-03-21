@@ -21,12 +21,12 @@ void print_times_table(int n)
 		for (j = 0 ; j <= n ; j++)
 		{
 			multi = i * j;
-			if (multi >= 10)
+		if (multi >= 10)
                 {
                         _putchar(' ');
 			_putchar(multi / 100 == 0 ? ' ' : (multi / 100) + '0');
                         _putchar(multi / 100 == 0 ? (multi / 10) + '0' : (multi % 100) + '0');
-                        _putchar((multi / 100 == 0 ? (multi % 10) + '0' : ((multi % 100) % 10) + '0');
+                        _putchar(multi / 100 == 0 ? (multi % 10) + '0' : ((multi % 100) % 10) + '0');
                         if (j != n)
                                 _putchar(',');
                 } else
