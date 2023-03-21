@@ -5,7 +5,7 @@
  *
  * Description: 'the program's description'
  *
- * Parameters : c is an integer
+ * parameter c is an integer
  *
  * Return: if c is lowercase 1 , else return 0  (Success)
  */
