@@ -3,8 +3,8 @@
 /**
  * add - Entry point
  * Description: 'the program's description'
- * @n1: number to check
- * @n2: number
+ * @a: number to check
+ * @b: number
  * Return: Always 0 (Success)
  */
 
