@@ -1,4 +1,3 @@
-#include <main.h>
 
 
 /**
@@ -9,6 +8,7 @@
  * Return: Always 0 (Success)
  */
 
+int _printchar(char c);
 
 int print_alphabet(void)
 {
