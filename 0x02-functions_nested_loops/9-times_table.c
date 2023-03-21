@@ -18,12 +18,15 @@ void times_table(void)
 		{
 			_putchar((multi / 10) + '0');
 			_putchar((multi % 10) + '0');
+			_putchar(',');
+			_putchar(' ');
 		}else
 		{
 			_putchar(multi + '0');
+			_putchar(',');
+			_putchar(' ');
+			_putchar(' ');
 		}
-		_putchar(',');
-		_putchar(' ');
 	}
 		_putchar('\n');
 	}
