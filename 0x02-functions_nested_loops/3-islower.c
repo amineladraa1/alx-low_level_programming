@@ -5,7 +5,7 @@
  *
  * Description: 'the program's description'
  *
- * parameter c is an integer
+ * @c:the character to be checked
  *
  * Return: if c is lowercase 1 , else return 0  (Success)
  */
