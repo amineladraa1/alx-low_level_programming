@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_sign - Entry point
+ * _abs - Entry point
  *
  * Description: 'the program's description'
  *
@@ -16,5 +16,6 @@ int _abs(int n)
 	if (n >= 0)
 		return (n);
 	res = n * -1;
+
 	return (res);
 }
