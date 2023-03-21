@@ -3,11 +3,8 @@
 
 /**
  * print_to_98 - Entry point
- *
  * Description: 'the program's description'
- *
  * @n: number to check
- *
  * Return: Always 0 (Success)
  */
 
@@ -28,7 +25,8 @@ void print_to_98(int n)
 			n++;
 		}
 	printf("\n");
-	} else if (n >= 98)
+	} 
+	else if (n >= 98)
 	{
 		while (n >= 98)
 		{
