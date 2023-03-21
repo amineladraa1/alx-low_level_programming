@@ -11,11 +11,12 @@
 
 void print_alphabet(void)
 {
-	int i;
-	i = 48;
-	for (i = 48 ; i <= 57 ; i++ )
+	char i;
+	i = "a";
+	while (ch <= 122)
 	{
-		_putchar("i");
+		_putchar(ch);
+		ch++;
 	}
-	_putchar("92110");
+	_putchar("\n");
 }
