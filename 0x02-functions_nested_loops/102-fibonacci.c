@@ -9,13 +9,15 @@
  */
 int main(void)
 {
-	void fibonacci(int n)
+	int i, sum;
+	
+	sum = 0;
+	printf("%d, ",1);
+	printf("%d, ",2);
+	for (i = 3 ; i < 50 ; i++)
 	{
-		int feb = 1;
-		if (n > 1)
-			feb += fibonacci(n - 1);
-		printf("%d, ",feb);
-	}
-	fibonacci(50);
+		sum += i;
+		printf("%d, ",sum);
+	}	
 	return (0);
 }
