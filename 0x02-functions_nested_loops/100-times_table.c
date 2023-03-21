@@ -24,10 +24,9 @@ void print_times_table(int n)
 			if (multi >= 10)
                 {
                         _putchar(' ');
-			_putchar(' ');
 			_putchar(multi / 100 == 0 ? ' ' : (multi / 100) + '0');
-                        _putchar((multi / 10) + '0');
-                        _putchar((multi % 10) + '0');
+                        _putchar(multi / 100 == 0 ? (multi / 10) + '0' : (multi % 100) + '0');
+                        _putchar((multi / 100 == 0 ? (multi % 10) + '0' : ((multi % 100) % 10) + '0');
                         if (j != n)
                                 _putchar(',');
                 } else
