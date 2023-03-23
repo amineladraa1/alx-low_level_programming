@@ -12,9 +12,7 @@
 void more_numbers(void)
 {
 	int i, j;
-	char str[];
-
-	str[] = "012345678910111213";
+	char str[] = "012345678910111213";
 
 	for (i = 0; i < 10; i++)
 	{
