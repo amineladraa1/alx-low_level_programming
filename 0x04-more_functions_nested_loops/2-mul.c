@@ -17,5 +17,5 @@ int mul(int a, int b)
 
 	multi = a * b;
 
-	return (multi);
+	return multi;
 }
