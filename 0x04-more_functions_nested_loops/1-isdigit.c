@@ -5,7 +5,7 @@
  *
  * Description: 'the program's description'
  *
- * @c: number to check
+ * @c: charachter to check
  *
  * Return: 0 and 1 (Success)
  */
