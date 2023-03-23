@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_sign - Entry point
+ * mul - Entry point
  *
  * Description: 'the program's description'
  *
@@ -17,5 +17,5 @@ int mul(int a, int b)
 
 	multi = a * b;
 
-	return multi;
+	return (multi);
 }
