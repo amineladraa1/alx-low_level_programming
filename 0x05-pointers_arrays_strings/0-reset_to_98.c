@@ -5,7 +5,7 @@
  *
  * Description: 'the program's description'
  *
- * @*n: number to check
+ * @n: number to check
  *
  * Return: void (Success)
  */
