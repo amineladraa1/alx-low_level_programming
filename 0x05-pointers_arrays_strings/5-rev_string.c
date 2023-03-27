@@ -13,7 +13,7 @@
 void rev_string(char *s)
 {
 	int length, i;
-	char end, start, temp;
+	char *end, *start, temp;
 
 
 	length = 0;
@@ -22,14 +22,19 @@ void rev_string(char *s)
 	{
 		length++;
 	}
-	end = s[length - 1];
-	start = s[0];
+	end = s;
+	start = s;
 
-	for (i = length - 1; i < length / 2; i++)
+	for (i = 0; i < length -1; i++)
 	{
-		temp = end;
-		end = start;
-		start = temp;
+		end++;
+	}
+
+	for (i = 0; i < length / 2; i++)
+	{
+		temp = *end;
+		*end = *start;
+		*start = temp;
 		end--;
 		start++;
 	}
