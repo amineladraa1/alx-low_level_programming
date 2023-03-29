@@ -7,7 +7,8 @@
  *
  * @dest: char to paste to
  * @src: char to copy
- * @n: number to delemit 
+ * @n: number to delemit
+ *
  * Return: a pointer dest (Success)
  */
 
