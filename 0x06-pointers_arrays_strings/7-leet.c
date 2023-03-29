@@ -12,37 +12,19 @@
 
 char *leet(char *str)
 {
-	int i, j;
-	char leet_map[256] = {0};
-	char *leet_str = str;
+	int i j;
+	char s1[] = "aAeEoOtTlL";
+	char s2[] = "4433007711";
 
-	for (i = 0; i < 256; i++)
+	for (i = 0; str[i] != '\0'; i++)
 	{
-	if (i == 'a' || i == 'A')
-	{
-		leet_map[i] = '4';
-	} else if (i == 'e' || i == 'E')
-	{
-		leet_map[i] = '3';
-	} else if (i == 'o' || i == 'O')
-	{
-		leet_map[i] = '0';
-	} else if (i == 't' || i == 'T')
-	{
-		leet_map[i] = '7';
-	} else if (i == 'l' || i == 'L')
-	{
-		leet_map[i] = '1';
-	} else
-	{
-		leet_map[i] = (char)i;
+		for (i = 0; j < 10; j++)
+		{
+			if (str[i] == s1[j])
+			{
+				str[i] = s2[j];
+			}
+		}
 	}
-	}
-
-	for (j = 0; str[j] != '\0'; j++)
-	{
-		leet_str[j] = leet_map[str[j]];
-	}
-
-	return (leet_str);
+	return (str);
 }
