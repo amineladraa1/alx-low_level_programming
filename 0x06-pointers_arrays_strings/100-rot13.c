@@ -12,7 +12,7 @@
 
 char *rot13(char *str)
 {
-	 char *p = s;
+	 char *p = str;
     while (*p)
     {
         int diff = (*p >= 'a' && *p <= 'z') ? 'a' : (*p >= 'A' && *p <= 'Z') ? 'A' : 0;
@@ -22,5 +22,5 @@ char *rot13(char *str)
         }
         p++;
     }
-    return s;
+    return str;
 }
