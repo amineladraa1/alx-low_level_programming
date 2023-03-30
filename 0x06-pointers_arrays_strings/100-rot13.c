@@ -12,10 +12,15 @@
 
 char *rot13(char *str)
 {
-	char *p = str;
-    while (*p) {
-        *p += ((*p >= 'A' && *p <= 'Z') || (*p >= 'a' && *p <= 'z')) * 13 - ((*p >= 'N' && *p <= 'Z') || (*p >= 'n' && *p <= 'z')) * 26;
+	 char *p = s;
+    while (*p)
+    {
+        int diff = (*p >= 'a' && *p <= 'z') ? 'a' : (*p >= 'A' && *p <= 'Z') ? 'A' : 0;
+        if (diff)
+        {
+            *p = ((int)(*p - diff + 13) % 26) + diff;
+        }
         p++;
     }
-    return str;
+    return s;
 }
