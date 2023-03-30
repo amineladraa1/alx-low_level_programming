@@ -12,15 +12,21 @@
 
 char *rot13(char *str)
 {
-	 char *p = str;
-    while (*p)
-    {
-        int diff = (*p >= 'a' && *p <= 'z') ? 'a' : (*p >= 'A' && *p <= 'Z') ? 'A' : 0;
-        if (diff)
-        {
-            *p = ((int)(*p - diff + 13) % 26) + diff;
+	 char letters[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+    char rot13[]  =  "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+    
+    char *result = str;
+    while (*str != '\0') {
+        char c = *str;
+        int i;
+        for (i = 0; i < 52; i++) {
+            if (c == letters[i]) {
+                c = rot13[i];
+                break;
+            }
         }
-        p++;
+        *str = c;
+        str++;
     }
-    return str;
+    return result;
 }
