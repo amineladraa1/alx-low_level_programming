@@ -23,7 +23,7 @@ unsigned int _strspn(char *s, char *accept)
 
 		for (i = 0; accept[i]; i++)
 		{
-			if(*s == accept[i])
+			if (*s == accept[i])
 			{
 				fflag = 1;
 				length++;
