@@ -13,7 +13,7 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int length;
+	unsigned int length = 0;
 	int i;
 	int fflag = 1;
 
@@ -31,4 +31,5 @@ unsigned int _strspn(char *s, char *accept)
 			}
 		}
 	}
+	return (length);
 }
