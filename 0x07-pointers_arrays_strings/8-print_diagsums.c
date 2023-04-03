@@ -13,14 +13,14 @@
 
 void print_diagsums(int *a, int size)
 {
-	int sum, sum1;
+	int sum, sum1, i;
 	int *ptr;
 	int *ptr1;
 
-	for (int i = 0; i < size; i++)
+	for (i = 0; i < size; i++)
 	{
 		ptr = a + ((i * size) + i);
-		ptr1 = a + ((i * size) + (size - i -1);
+		ptr1 = a + ((i * size) + (size - i - 1);
 		sum = sum + *ptr;
 		sum1 = sum1 + *ptr1;
 	}
