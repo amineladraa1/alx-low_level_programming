@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * print_sign - Entry point
+ * print_diagsums - Entry point
  *
  * Description: 'the program's description'
  *
