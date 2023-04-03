@@ -13,10 +13,9 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-	char *hay;
 	while (*haystack)
 	{
-		hay = haystack;
+		char *hay = haystack;
 
 		while (*needle && *needle == *hay)
 		{
