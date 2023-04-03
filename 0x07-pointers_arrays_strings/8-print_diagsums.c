@@ -22,9 +22,9 @@ void print_diagsums(int *a, int size)
 	for (i = 0; i < size; i++)
 	{
 		ptr = a + ((i * size) + i);
-		ptr1 = a + ((i * size) + (size - i - 1);
+		ptr1 = a + (i * size) + (size - i - 1);
 		sum = sum + *ptr;
 		sum1 = sum1 + *ptr1;
 	}
-	printf("%d, %d", sum, sum1);
+	printf("%d, %d\n", sum, sum1);
 }
