@@ -13,7 +13,9 @@
 
 void print_diagsums(int *a, int size)
 {
-	int sum, sum1, i;
+	int sum = 0;
+	int sum1 = 0;
+	int i;
 	int *ptr;
 	int *ptr1;
 
