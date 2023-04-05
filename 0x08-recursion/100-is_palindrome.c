@@ -1,5 +1,7 @@
 #include "main.h"
 
+int poli_h(char *s, int begin, int end);
+
 /**
  * is_palindrome - Entry point
  *
