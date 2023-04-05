@@ -41,8 +41,8 @@ int is_palindrome(char *s)
  * Return: 0 (fail) 1 (Success)
  */
 
-int poli_h(char *s, int begin, int end)
-{
+int poli_h(char *s, int begin, int end) {
+
 	if (begin >= end)
 	{
 		return (1);
