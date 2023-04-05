@@ -10,6 +10,8 @@
  * Return: 0 (fail) 1 (Success)
  */
 
+int poli_h(char *s, int begin, int end);
+
 int is_palindrome(char *s)
 {
 	int length = 0;
