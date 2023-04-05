@@ -22,7 +22,7 @@ int is_palindrome(char *s)
 }
 
 /**
- * poli_h - Entry point
+ * is_palindrome_helper - Entry point
  *
  * Description: 'helper function'
  *
