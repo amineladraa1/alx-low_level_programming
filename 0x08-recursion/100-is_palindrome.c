@@ -48,5 +48,8 @@ int poli_h(char *s, int begin, int end)
 	{
 		return (0);
 	}
+	else
+	{
 	return (poli_h(s, begin + 1, end - 1);
+	}
 }
