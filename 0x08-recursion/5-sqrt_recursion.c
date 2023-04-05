@@ -34,7 +34,7 @@ int _sqrt(int n,int guess)
 	}
 	else if (guess * guess < n)
 	{
-		return (_sqrt(n ,guess - 1));
+		return (_sqrt(n ,guess + 1));
 	}
 	else
 	{
