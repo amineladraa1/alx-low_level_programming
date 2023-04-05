@@ -1,7 +1,5 @@
 #include "main.h"
 
-int poli_h(char *s, int begin, int end);
-
 /**
  * is_palindrome - Entry point
  *
@@ -25,9 +23,8 @@ int is_palindrome(char *s)
 	{
 		return (1);
 	}
-	return (poli_h(s, 0,length - 1));
+	return (poli_h(s, 0, length - 1));
 }
-
 
 /**
  * poli_h - Entry point
