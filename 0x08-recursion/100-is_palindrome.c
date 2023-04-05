@@ -10,14 +10,20 @@
  * Return: 0 (fail) 1 (Success)
  */
 
+
+int _strlen_recursion(char *s)
+{
+    if (*s == '\0')
+        return (0);
+    else
+        return (_strlen_recursion(s + 1) + 1);
+}
+
+
 int is_palindrome(char *s)
 {
-	int length = 0;
+	int length = _strlen_recursion(s);
 
-	while (s[length] != '\0')
-	{
-		length++;
-	}
 	if (length <= 1)
 	{
 		return (1);
