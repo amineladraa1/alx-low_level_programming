@@ -12,9 +12,9 @@
 
 int is_palindrome(char *s)
 {
-	int length;
+	int length = 0;
 
-	while (*s != '\0')
+	while (s[length] != '\0')
 	{
 		length++;
 	}
@@ -44,10 +44,9 @@ int _poli_h(char *s, int begin, int end)
 	{
 		return (1);
 	}
-	if (s[begin] == s[end])
+	if (s[begin] != s[end])
 	{
-		return (_poli_h(s, begin + 1, end -1));
+		return (0);
 	}
-	return (0);
-
+	return (_poli_h(s, begin + 1, end - 1);
 }
