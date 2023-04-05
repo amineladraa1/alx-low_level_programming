@@ -10,25 +10,8 @@
  * Return: 0 (fail) 1 (Success)
  */
 
-
-int poli_h(char *s, int begin, int end) {
-
-        if (begin >= end)
-        {
-                return (1);
-        }
-        else if (s[begin] != s[end])
-        {
-                return (0);
-        }
-        else
-        {
-        return (poli_h(s, begin + 1, end - 1));
-        }
-}
-
-
-int is_palindrome(char *s) {
+int is_palindrome(char *s)
+{
 	int length = 0;
 
 	while (s[length] != '\0')
@@ -54,3 +37,19 @@ int is_palindrome(char *s) {
  * Return: 0 (fail) 1 (Success)
  */
 
+int poli_h(char *s, int begin, int end)
+{
+
+        if (begin >= end)
+        {
+                return (1);
+        }
+        else if (s[begin] != s[end])
+        {
+                return (0);
+        }
+        else
+        {
+        return (poli_h(s, begin + 1, end - 1));
+        }
+}
