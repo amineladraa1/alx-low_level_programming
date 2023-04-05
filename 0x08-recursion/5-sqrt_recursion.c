@@ -2,7 +2,6 @@
 
 /**
  * _sqrt_recursion - Entry point
- * _sqrt: helper function
  *
  * Description: 'the program's give the square root of a number'
  *
@@ -27,7 +26,18 @@ int _sqrt_recursion(int n)
 	}
 }
 
-int _sqrt(int n,int guess)
+/**
+ * _sqrt - Entry point
+ *
+ * Description: 'the program is to help find the square root'
+ *
+ * @n: number to check
+ * @guess: is a guess to approximate the square
+ *
+ * Return: square root(Success)
+ */
+
+int _sqrt(int n, int guess)
 {
 	if (guess * guess == n)
 	{
