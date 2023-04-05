@@ -14,27 +14,27 @@ int _sqrt_recursion(int n)
 {
 	if (n < 0)
 	{
-		return (-1)
+		return (-1);
 	}
 	else if (n == 0 || n == 1)
 	{
-		return (n)
+		return (n);
 	}
 	else
 	{
-		sqrt(n , 1);
+		_sqrt(n , 1);
 	}
 }
 
-int sqrt(int n,int guess)
+int _sqrt(int n,int guess)
 {
 	if (guess * guess == n)
 	{
-		return (guess)
+		return (guess);
 	}
 	else if (guess * guess < n)
 	{
-		sqrt(n ,guess - 1);
+		_sqrt(n ,guess - 1);
 	}
 	else
 	{
