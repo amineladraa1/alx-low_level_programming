@@ -2,6 +2,7 @@
 
 /**
  * _sqrt_recursion - Entry point
+ * _sqrt: helper function
  *
  * Description: 'the program's give the square root of a number'
  *
@@ -22,7 +23,7 @@ int _sqrt_recursion(int n)
 	}
 	else
 	{
-		return (_sqrt(n , 1));
+		return (_sqrt(n, 1));
 	}
 }
 
@@ -34,7 +35,7 @@ int _sqrt(int n,int guess)
 	}
 	else if (guess * guess < n)
 	{
-		return (_sqrt(n ,guess + 1));
+		return (_sqrt(n, guess + 1));
 	}
 	else
 	{
