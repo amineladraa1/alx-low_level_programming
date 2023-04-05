@@ -22,12 +22,12 @@ int is_palindrome(char *s)
 	{
 		return (1);
 	}
-	return (_poli_h(s, 0,length - 1));
+	return (poli_h(s, 0,length - 1));
 }
 
 
 /**
- * _poli_h - Entry point
+ * poli_h - Entry point
  *
  * Description: 'helper function'
  *
@@ -38,7 +38,7 @@ int is_palindrome(char *s)
  * Return: 0 (fail) 1 (Success)
  */
 
-int _poli_h(char *s, int begin, int end)
+int poli_h(char *s, int begin, int end)
 {
 	if (begin >= end)
 	{
@@ -48,5 +48,5 @@ int _poli_h(char *s, int begin, int end)
 	{
 		return (0);
 	}
-	return (_poli_h(s, begin + 1, end - 1);
+	return (poli_h(s, begin + 1, end - 1);
 }
