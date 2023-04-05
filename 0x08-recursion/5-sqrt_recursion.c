@@ -22,7 +22,7 @@ int _sqrt_recursion(int n)
 	}
 	else
 	{
-		_sqrt(n , 1);
+		return (_sqrt(n , 1));
 	}
 }
 
@@ -34,7 +34,7 @@ int _sqrt(int n,int guess)
 	}
 	else if (guess * guess < n)
 	{
-		_sqrt(n ,guess - 1);
+		return (_sqrt(n ,guess - 1));
 	}
 	else
 	{
