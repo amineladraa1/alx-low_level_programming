@@ -10,7 +10,6 @@
  * Return: 0 (fail) 1 (Success)
  */
 
-int poli_h(char *s, int begin, int end);
 
 int is_palindrome(char *s)
 {
@@ -46,12 +45,12 @@ int poli_h(char *s, int begin, int end)
 	{
 		return (1);
 	}
-	if (s[begin] != s[end])
+	else if (s[begin] != s[end])
 	{
 		return (0);
 	}
 	else
 	{
-	return (poli_h(s, begin + 1, end - 1);
+	return (poli_h(s, begin + 1, end - 1));
 	}
 }
