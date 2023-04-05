@@ -22,7 +22,7 @@ int is_palindrome(char *s)
 	{
 		return (1);
 	}
-	return (poli_h(s, 0, length - 1));
+	return (is_palindrome_helper(s, 0, length - 1));
 }
 
 /**
@@ -37,19 +37,13 @@ int is_palindrome(char *s)
  * Return: 0 (fail) 1 (Success)
  */
 
-int poli_h(char *s, int begin, int end)
+int is_palindrome_helper(char *s, int begin, int end)
 {
-
-        if (begin >= end)
-        {
-                return (1);
-        }
-        else if (s[begin] != s[end])
-        {
-                return (0);
-        }
-        else
-        {
-        return (poli_h(s, begin + 1, end - 1));
-        }
+    if (begin >= end) {
+        return (1);
+    }
+    if (s[begin] != s[end]) {
+        return (0);
+    }
+    return is_palindrome_helper(s, begin + 1, end - 1);
 }
