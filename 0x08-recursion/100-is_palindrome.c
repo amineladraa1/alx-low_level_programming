@@ -22,7 +22,7 @@ int is_palindrome(char *s)
 	{
 		return (1);
 	}
-	return (_poli_h(s, 0,length - 1);
+	return (_poli_h(s, 0,length - 1));
 }
 
 
@@ -46,7 +46,7 @@ int _poli_h(char *s, int begin, int end)
 	}
 	if (s[begin] == s[end])
 	{
-		return (_poli_h(s, begin + 1, end -1);
+		return (_poli_h(s, begin + 1, end -1));
 	}
 	return (0);
 
