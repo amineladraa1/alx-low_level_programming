@@ -40,5 +40,5 @@ int _prime_h(int n, int devisor)
 	{
 		return (0);
 	}
-	return (n, devisor - 1);
+	return _prime_h(n, devisor - 1);
 }
