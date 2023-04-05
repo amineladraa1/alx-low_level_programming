@@ -22,7 +22,7 @@ int is_palindrome(char *s)
 	{
 		return (1);
 	}
-	return (_poli_h(s, 0,length - 1)
+	return (_poli_h(s, 0,length - 1);
 }
 
 
