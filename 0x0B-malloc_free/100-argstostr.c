@@ -42,7 +42,7 @@ char *argstostr(int ac, char **av)
 		pos += strlen(av[i]);
 		res[pos++] = '\n';
 	}
-	res[pos - 1] = '\0';
-	res[pos++] = '\n';
+	res[pos - 1] = '\n';
+	res[pos] = '\0';
 	return (res);
 }
