@@ -1,13 +1,13 @@
 #include <stdlib.h>
 
 /**
- * create_array - create array of size size and assign char c
+ * create_array - create array
  *
  *
  * @size: size of array
  * @c: char to assign
  *
- * Description: creat array of size size and assign char c
+ * Description: creat array with c characters inside
  *
  * Return: pointer to array, NULL if fail
  *
