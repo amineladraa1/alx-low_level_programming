@@ -13,7 +13,7 @@
 
 char **strtow(char *str)
 {
-	int i, j, num_words, word_index, start_index, end_index;
+	int i, j,word_length, num_words, word_index, start_index, end_index;
 	char **words;
 
 	if (str == NULL || strlen(str) == 0)
