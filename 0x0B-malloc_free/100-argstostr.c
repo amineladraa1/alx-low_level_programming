@@ -34,7 +34,7 @@ char *argstostr(int ac, char **av)
 	res = (char *)malloc(total_length * sizeof(char));
 	if (res == NULL)
 	{
-		return NULL;
+		return (NULL);
 	}
 	pos = 0;
 
