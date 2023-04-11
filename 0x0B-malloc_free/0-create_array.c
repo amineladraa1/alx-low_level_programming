@@ -7,7 +7,6 @@
  * @size: size of array
  * @c: char to assign
  *
- * Description: array with c characters inside
  *
  * Return: pointer to array, NULL if fail
  *
