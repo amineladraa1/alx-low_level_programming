@@ -1,7 +1,7 @@
 #include <stdlib.h>
 
 /**
- * alloc_grid - Entry point
+ * free_grid - Entry point
  *
  * Description: nested loop to free grid
  *
