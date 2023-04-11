@@ -30,7 +30,6 @@ char *argstostr(int ac, char **av)
 	}
 
 	total_length++;
-	total_length++;
 
 	res = (char *)malloc(total_length * sizeof(char));
 	if (res == NULL)
