@@ -43,5 +43,6 @@ char *argstostr(int ac, char **av)
 		res[pos++] = '\n';
 	}
 	res[pos - 1] = '\0';
+	res[pos++] = '\n';
 	return (res);
 }
