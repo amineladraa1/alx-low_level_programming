@@ -3,12 +3,12 @@
 
 /**
  * str_concat - Entry point
- * 
+ *
  * Description: get ends of input and add together for size
  *
  * @s1: input one to concat
  * @s2: input two to concat
- * 
+ *
  * Return: concat of s1 and s2
  */
 
@@ -35,5 +35,5 @@ char *str_concat(char *s1, char *s2)
 	strcpy(res, s1);
 	strcat(res, s2);
 
-	return res;
+	return (res);
 }
