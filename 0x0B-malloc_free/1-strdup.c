@@ -2,8 +2,9 @@
 #include <string.h>
 
 /**
-
- * _strdup - duplicate to new memory space location
+ * _strdup - Entry point
+ *
+ * Description: duplicate to new memory space location
  *
  * @str: char
  *
