@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
+#include "main.h"
 
 /**
  * multiply - Entry point
@@ -14,38 +15,40 @@
 
 void multiply(char* num1, char* num2)
 {
-	int len1 = 0, len2 = 0;
+	int len1 = 0, len2 = 0, len, i, carry, n1, j, n2, product;
+	int *res;
 
 	while (num1[len1]) len1++;
 	while (num2[len2]) len2++;
-	int len = len1 + len2;
-	int* res = calloc(len, sizeof(int));
+	len = len1 + len2;
+	res = calloc(len, sizeof(int));
 
-	for (int i = len1 - 1; i >= 0; i--)
+	for (i = len1 - 1; i >= 0; i--)
 	{
 		if (!isdigit(num1[i]))
 		{
 		printf("Error\n");
 		exit(98);
 		}
-		int carry = 0;
-		int n1 = num1[i] - '0';
-		for (int j = len2 - 1; j >= 0; j--)
+		carry = 0;
+		n1 = num1[i] - '0';
+
+		for (j = len2 - 1; j >= 0; j--)
 		{
 			if (!isdigit(num2[j]))
 			{
 				printf("Error\n");
 				exit(98);
             		}
-		int n2 = num2[j] - '0';
-		int product = n1 * n2 + res[i+j+1] + carry;
+		n2 = num2[j] - '0';
+		product = n1 * n2 + res[i+j+1] + carry;
 		res[i+j+1] = product % 10;
 		carry = product / 10;
 		}
 	res[i] += carry;
 	}
 
-	int i = 0;
+	i = 0;
 
 	while (i < len-1 && res[i] == 0) i++;
 	while (i < len)
