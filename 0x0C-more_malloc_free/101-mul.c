@@ -13,13 +13,15 @@
  * Return: Always 0 (Success)
  */
 
-void multiply(char* num1, char* num2)
+void multiply(char *num1, char *num2)
 {
 	int len1 = 0, len2 = 0, len, i, carry, n1, j, n2, product;
 	int *res;
 
-	while (num1[len1]) len1++;
-	while (num2[len2]) len2++;
+	while (num1[len1])
+		len1++;
+	while (num2[len2])
+		len2++;
 	len = len1 + len2;
 	res = calloc(len, sizeof(int));
 
@@ -39,10 +41,10 @@ void multiply(char* num1, char* num2)
 			{
 				printf("Error\n");
 				exit(98);
-            		}
+			}
 		n2 = num2[j] - '0';
-		product = n1 * n2 + res[i+j+1] + carry;
-		res[i+j+1] = product % 10;
+		product = n1 * n2 + res[i + j + 1] + carry;
+		res[i + j + 1] = product % 10;
 		carry = product / 10;
 		}
 	res[i] += carry;
@@ -50,7 +52,8 @@ void multiply(char* num1, char* num2)
 
 	i = 0;
 
-	while (i < len-1 && res[i] == 0) i++;
+	while (i < len-1 && res[i] == 0)
+		i++;
 	while (i < len)
 	{
 		printf("%d", res[i]);
@@ -65,11 +68,11 @@ void multiply(char* num1, char* num2)
  * Description: 'check the 2 strings given in args'
  *
  * @argc: number to multi
- * @argv[]: number to multi
+ * @argv: number to multi
  * Return: Always 0 (Success)
  */
 
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
 	if (argc != 3)
 	{
