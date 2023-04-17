@@ -29,7 +29,7 @@ int _strlen(char *s)
  * Return: the pointer to dest
  */
 
-char *_strcpy(char *dest; char *src)
+char *_strcpy(char *dest, char *src)
 {
 	while (*src != '\0')
 	{
@@ -56,20 +56,19 @@ char *_strcpy(char *dest; char *src)
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *doggy;
-	int len_name;
-	int len_owner;
+	int len_name, len_owner;
 
 	len_name = _strlen(name);
 	len_owner = _strlen(owner);
 
-	doggy = malloc(sizeof(dog_t);
+	doggy = malloc(sizeof(dog_t));
 
-	if (dog == NULL)
+	if (doggy == NULL)
 	{
 		return (NULL);
 	}
 
-	doggy->name = malloc(sizeof(char) * len_name + 1;
+	doggy->name = malloc(sizeof(char) * len_name + 1);
 
 	if (doggy->name == NULL)
 	{
