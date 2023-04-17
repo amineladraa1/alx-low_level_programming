@@ -7,17 +7,22 @@
  *
  * Return: the length of the string
  */
-
 int _strlen(char *s)
 {
-	int length = 0;
+	int i;
 
-	while (s[length] != '\0')
+	i = 0;
+
+
+	while (s[i] != '\0')
 	{
-		length++;
+		i++;
 	}
-	return (length);
+
+
+	return (i);
 }
+
 
 /**
  *_strcpy - copies the string pointed to by src
@@ -28,18 +33,29 @@ int _strlen(char *s)
  *
  * Return: the pointer to dest
  */
-
 char *_strcpy(char *dest, char *src)
 {
-	while (*src != '\0')
+	int len, i;
+
+
+	len = 0;
+
+
+	while (src[len] != '\0')
 	{
-		*dest = *src;
-		dest++;
-		src++;
+		len++;
 	}
-	*(dest + 1) = '\0';
+
+
+	for (i = 0; i < len; i++)
+	{
+		dest[i] = src[i];
+	}
+	dest[i] = '\0';
+
+
 	return (dest);
-}
+	}
 
 /**
  * new_dog - Entry point
