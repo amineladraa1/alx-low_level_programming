@@ -1,6 +1,7 @@
 #ifndef FUNC_H
 #define FUNC_H
-#include <stddef.h>
+
+typedef Unsigned int size_t
 
 int _putchar(char c);
 void print_name(char *name, void (*f)(char *));
