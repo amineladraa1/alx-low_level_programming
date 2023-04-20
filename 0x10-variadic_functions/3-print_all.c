@@ -3,24 +3,17 @@
 
 /**
  * print_all - Entry point
- *
  * Description: 'the program's print all format'
- *
  * @format: number to check
- *
- * Return: Always 0 (Success)
+ * Return: void (Success)
  */
-
 void print_all(const char * const format, ...)
 {
 	int i = 0;
 	char *str, *sep = "";
 	va_list list;
 
-
 	va_start(list, format);
-
-
 	if (format)
 	{
 		while (format[i])
@@ -50,9 +43,6 @@ void print_all(const char * const format, ...)
 			i++;
 		}
 	}
-
-
 	printf("\n");
 	va_end(list);
-
 }
