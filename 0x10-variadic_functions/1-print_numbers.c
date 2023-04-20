@@ -29,4 +29,5 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		(i == n - 1) ? printf("%d", arg) : printf("%d%s", arg, separator);  
 	}
 	printf("\n");
+	va_end(args);
 }
