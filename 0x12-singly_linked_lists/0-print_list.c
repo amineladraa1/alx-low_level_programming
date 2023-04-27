@@ -1,6 +1,5 @@
 #include "main.h"
 
-
 /**
  * print_list - Entry point
  *
