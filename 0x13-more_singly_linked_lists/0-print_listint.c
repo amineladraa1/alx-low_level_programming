@@ -19,12 +19,12 @@ size_t print_listint(const listint_t *h)
 
 	if (h == NULL)
 		return (-1);
-	while (h->next)
+	while (h)
 	{
 		if (h->n)
-			printf("0");
+			printf("%u\n",h->n);
 		else
-			printf("%u", h->n);
+			printf("(nil)");
 	counter++;
 	h = h->next;
 	}
