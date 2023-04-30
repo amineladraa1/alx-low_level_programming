@@ -19,6 +19,19 @@ listint_t *reverse_listint(listint_t **head)
 		return (NULL);
 	return (recur(prev, *head, head));
 }
+
+/**
+ * recur - recursion to reverse the linked list
+ *
+ * @prev: the previous node
+ * @current: current node
+ * @head: pointer to the first node
+ *
+ * Return: pointer to the first node in the new list
+ */
+
+
+
 listint_t *recur(listint_t *prev, listint_t *current, listint_t **head)
 {
 	listint_t *next;
