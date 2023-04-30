@@ -14,6 +14,7 @@ listint_t *recur(listint_t *prev, listint_t *current, listint_t **head);
 listint_t *reverse_listint(listint_t **head)
 {
 	listint_t *prev = NULL;
+
 	if (head == NULL || *head == NULL)
 		return (NULL);
 	return (recur(prev, *head, head));
@@ -21,6 +22,7 @@ listint_t *reverse_listint(listint_t **head)
 listint_t *recur(listint_t *prev, listint_t *current, listint_t **head)
 {
 	listint_t *next;
+
 	if (current == NULL)
 	{
 		*head = prev;
@@ -29,5 +31,5 @@ listint_t *recur(listint_t *prev, listint_t *current, listint_t **head)
 
 	next = current->next;
 	current->next = prev;
-	return (recur(current, next, head));	
+	return (recur(current, next, head));
 }
