@@ -2,7 +2,7 @@
 #include <stddef.h>
 
 /**
- * binary_to_uint - Entry point 
+ * binary_to_uint - Entry point
  * @b: string containing the binary number
  *
  * Return: the converted number
