@@ -13,10 +13,11 @@
  */
 int append_text_to_file(const char *filename, char *text_content)
 {
-	int des, written, length;
+	int des, written, length = 0;
 
 	if (text_content == NULL)
 		return (-1);
+
 	length = strlen(text_content);
 	des = open(filename, O_WRONLY | O_APPEND);
 	written = write(des, text_content, length);
