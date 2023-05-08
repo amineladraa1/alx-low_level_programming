@@ -1,5 +1,4 @@
 #include "main.h"
-#include <string.h>
 
 /**
  * append_text_to_file -Entry point.
@@ -19,7 +18,10 @@ int append_text_to_file(const char *filename, char *text_content)
 		return (-1);
 
 	if (text_content != NULL)
-		length = strlen(text_content);
+	{
+		for (len = 0; text_content[len];)
+			len++;
+	}
 	des = open(filename, O_WRONLY | O_APPEND);
 	written = write(des, text_content, length);
 
