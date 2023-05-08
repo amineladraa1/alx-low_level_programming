@@ -14,24 +14,23 @@
 
 int create_file(const char *filename, char *text_content)
 {
-	int des;
-	ssize_t written;
+	int des, written, len = 0;
 
 	if (filename == NULL)
 		return (-1);
-	des = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
 
-	if (des == -1)
-		return (-1);
 	if (text_content != NULL)
 	{
-		written = write(des, text_content, strlen(text_content));
-		if (written != strlen(text_content))
-		{
-		close(des);
-		return (-1);
-		}
+		for (len = 0; text_content[len];)
+			len++;
 	}
+
+	des = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
+	written = write(fd, text_content, len);
+
+	if (des == -1 || written == -1)
+		return (-1);
+
 	close(des);
 	return (1);
 }
