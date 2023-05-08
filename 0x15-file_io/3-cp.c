@@ -64,6 +64,7 @@ int main(int argc, char *argv[])
 {
 	int red, written, file_from, file_to;
 	char *buffer;
+
 	if (argc != 3)
 	{
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
@@ -79,9 +80,10 @@ int main(int argc, char *argv[])
 		if (file_from == -1 || red == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't read from file %s", argv[1]);
+			free(buffer);
 			return (98);
 		}
-		written = write(file_to, buffer, 1024);
+		written = write(file_to, buffer, red);
 
 		if (file_to == -1 || written == -1)
 		{
