@@ -18,7 +18,8 @@ int append_text_to_file(const char *filename, char *text_content)
 	if (text_content == NULL)
 		return (-1);
 
-	length = strlen(text_content);
+	f (text_content != NULL)
+		length = strlen(text_content);
 	des = open(filename, O_WRONLY | O_APPEND);
 	written = write(des, text_content, length);
 
