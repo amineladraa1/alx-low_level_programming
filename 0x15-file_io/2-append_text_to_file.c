@@ -1,22 +1,30 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "main.h"
+#include <string.h>
 
 /**
- * main - check the code
+ * append_text_to_file -Entry point.
  *
- * Return: Always 0.
+ * @filename: A pointer to the name of the file.
+ * @text_content: The string to add to the end of the file.
+ *
+ * Return: If the function fails or filename is NULL - -1.
+ *         If the file does not exist the user lacks write permissions - -1.
+ *         Otherwise - 1.
  */
-int main(int ac, char **av)
+int append_text_to_file(const char *filename, char *text_content)
 {
-    int res;
+	int des, written, length = 0;
 
-    if (ac != 3)
-    {
-        dprintf(2, "Usage: %s filename text\n", av[0]);
-        exit(1);
-    }
-    res = create_file(av[1], av[2]);
-    printf("-> %i)\n", res);
-    return (0);
+	if (filename == NULL)
+		return (-1);
+
+	if (text_content != NULL)
+		length = strlen(text_content);
+	des = open(filename, O_WRONLY | O_APPEND);
+	written = write(des, text_content, length);
+
+	if (des == -1 || written == -1)
+		return (-1);
+	close(des);
+	return (1);
 }
