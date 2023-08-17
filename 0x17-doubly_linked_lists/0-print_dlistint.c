@@ -2,6 +2,7 @@
 #include <string.h>
 #include <stdio.h>
 #include "lists.h"
+#include <stddef.h>
 
 /**
  * print_dlistint - check the code
@@ -11,13 +12,14 @@
  */
 size_t print_dlistint(const dlistint_t *h)
 {
-	int length = 0;
+	size_t length = 0;
 
-	if ( *h == NULL || h == NULL)
+	if (h == NULL)
 		return (0);
-	while ( h )
+	while (h)
 	{
 		printf("%d\n", h->n);
+		h = h->next;
 		length += 1;
 	}
 	return (length);
