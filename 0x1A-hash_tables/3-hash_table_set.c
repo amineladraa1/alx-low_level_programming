@@ -16,9 +16,9 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	hash_node_t *current;
 	hash_node_t *prev = NULL;
 
-	if (*key == '\0' || key == NULL || ht == NULL || value == '\0')
+	if (*key == '\0' || key == NULL || ht == NULL || *value == '\0')
 		return (0);
-
+	index = key_index((unsigned char *)key, ht->size);
 	current = ht->array[index];
 
 	while (current)
@@ -32,6 +32,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		prev = current;
 		current = current->next;
 	}
+	(void)prev;
 	new_node = malloc(sizeof(hash_node_t));
 
 	if (new_node == NULL)
