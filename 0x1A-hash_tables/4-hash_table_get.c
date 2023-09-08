@@ -12,12 +12,14 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	unsigned long int index;
 	hash_node_t *current;
 
-	index = key_index((unsigned char *)key, ht->size);
-
 	if (ht == NULL || key == NULL || *key == '\0')
 		return (NULL);
-	current = ht->array[index];
+	index = key_index((unsigned char *)key, ht->size);
 
+	if (index >= ht->size)
+		return (NULL);	
+	current = ht->array[index];
+	
 	while (current)
 	{
 		if (strcmp(current->key, key) == 0)
